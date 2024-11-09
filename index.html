@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="zh-CN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="http://cmsstatic.dataoke.com//css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://cmsstatic.dataoke.com//css/footer.css">
+    <link rel="stylesheet" type="text/css" href="http://cmsstatic.dataoke.com//css/pager.css">
+    <link rel="stylesheet" type="text/css" href="http://cmsstatic.dataoke.com//css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cmsstatic.dataoke.com//css/dtk.css">
+    <!-- 皮肤 S-->
+        <!-- 皮肤 E-->
+    <link rel="stylesheet" href="http://cmsstatic.dataoke.com//css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="http://cmsstatic.dataoke.com//web/css/cms_ggw.css" />
+<title>淘宝优惠券_淘宝内部优惠券领取网站</title>
+    <meta name="Keywords" content="淘宝优惠劵,淘宝内部优惠券,优惠券领取网站"/>
+    <meta name="Description" content="领券帮-淘宝优惠券领取网站！每天更新千款，纯人工筛选验货，限时限量特卖，全场1折包邮！"/>
+    <script src="http://cmsstatic.dataoke.com/other/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cmsstatic.dataoke.com//js/layer/layer.js"></script>
+    <script src="http://cmsstatic.dataoke.com//js/dtk.js"></script>
+    <script src="http://cmsstatic.dataoke.com//js/swiper.min.js"></script>
+    <style type="text/css">
+<!--
+.STYLE1 {font-size: 22px}
+-->
+    </style>
+</head><!-- head -->
+<body>
+
+<!--最顶-->
+<div id="navTop">
+        <div id="top">
+        <div id="topleft" style="margin: 0;line-height: 25px;">本站商品都有优惠 <a target="_blank" style="height: 22px;float: right;" href="https://jq.qq.com/?_wv=1027&amp;k=48SDWZQ">
+                    <img border="0" src="https://img.alicdn.com/imgextra/i1/2508158775/TB2SfmWqFXXXXb4XpXXXXXXXXXX_!!2508158775.png">
+                </a>
+                    </div>
+        <ul id="topright" style="line-height: 25px;">
+            <li style=" margin-right: 8px;">
+                <a class="set_home" href="javascript:void(0)" onClick="SetHome(this,window.location)" style="color: #757575" title="将本站设为首页">设为首页</a>
+            </li>
+            <li style="margin-right: 8px;">
+                <a class="add_favorite" href="javascript:void(0)" onClick="shoucang(document.title,window.location)" style="color: #757575" title="加入收藏，方便下次打开">加入收藏</a>
+            </li>
+            <li>
+                <a class="header_service" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=312943905&site=qq&menu=yes" style="color: #8da7cb" title="联系我帮你解答">遇到购物问题? 联系我 ></a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div><!--最顶结束-->
+<!--顶部搜索框-->
+<div id="headNav">
+    <div id="header" style="padding-bottom: 10px;">
+        <a class="header_logo" href="http://www.lingquanbang.cn/index.php?r=index/index&u=669231" target="_blank"
+           style="width: 380px; height: 80px;display: inline-block;float: left;    background-size: inherit;    background: url('http://www.lingquanbang.cn/logo-2.png')left top no-repeat;    margin-top: -7px;text-align: left;line-height: 80px;color: red;font-size: 36px;padding-left: 20px;">
+                </a>
+        <div id="showList">
+            <div id="search">
+                    <form action="http://www.lingquanbang.cn/index.php?r=index/index" target="_blank"> 
+                    <input type="hidden" name="r" value="l">
+                    <input type="text" class="theme-border-color-1" value="" name="kw" placeholder="好宝贝 等你搜"/>
+                    <button type="submit" class="theme-bg-color-1">搜索</button>
+                </form>
+            </div>
+
+            <dl>
+                <dt class="rg"></dt>
+            </dl>
+            <dl>
+                <dt class="zy"></dt>
+            </dl>
+            <dl>
+                <dt class="qc"></dt>
+            </dl>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<!-- 悬浮搜索框--
+            <div class="floatNav">
+            <div class="fn-block">
+                <form action="http://www.lingquanbang.cn/index.php?r=index/index">
+                    <input type="hidden" name="r" value="l">
+                    <input type="text" class="fn-src" value="" name="kw" placeholder="好宝贝 等你搜"/>
+                    <button type="submit" class="srcBtn"></button>
+                </form>
+            </div>
+        </div> 悬浮搜索框-->
+    </div><!--顶部搜索结束-->
+<!--导航-->
+<div id="baner" class="theme-bg-color-1">
+    <div id="nav" style="font-size: 15px;">
+        <a href="http://www.lingquanbang.cn/index.php?r=index/index&u=669231" target="_blank" class="theme-hover-bg-color-8 iconM active" style="padding:8px 27px;">
+            <i class="iconfont">&#xe601;</i><span style="margin-right: 7px;">首页</span>        </a>
+
+        <a href="http://www.lingquanbang.cn/index.php?r=l&u=669231" target="_blank" class="theme-hover-bg-color-8 " style="padding:8px 15px;">
+            领券优惠直播        </a>
+
+      <a href="http://www.lingquanbang.cn/index.php?r=ddq&u=669231" target="_blank" class="theme-hover-bg-color-8 " style="padding:8px 15px;">
+            咚咚抢
+            <div style="position:absolute; width:24px; height:32px; background:#FFCC00;margin-left: 107px; margin-top: -25px; background:url(http://a.vpimg3.com/upload/dop/2016/01/04/148/HOTT_qeu.gif)"></div>
+        </a>
+
+        
+        <a href="http://www.lingquanbang.cn/index.php?r=p&u=669231" target="_blank" class="theme-hover-bg-color-8 iconH " style="padding:8px 15px;">
+            超级人气榜
+        </a>
+
+        <a href="http://www.lingquanbang.cn/index.php?r=nine&u=669231" target="_blank" class="theme-hover-bg-color-8 " style="padding:8px 15px;">
+            9块9包邮
+        </a>
+
+		<a href="http://vip.jvyougou.top/app/index.php?i=53&c=entry&eid=121" target="_blank" class="theme-hover-bg-color-8 " style="padding:8px 15px;">
+            vip影院
+            <div style="position:absolute; width:24px; height:32px; background:#FFCC00;margin-left: 107px; margin-top: -25px; background:url(http://a.vpimg3.com/upload/dop/2016/01/04/148/HOTT_qeu.gif)"></div>
+        </a>
+
+		<a class="theme-hover-bg-color-8 app_download " href="https://www.bslyun.com/index.php?ctl=app_download&code=rbCQvr%2BgtLTk4OTE4LS0wA%3D%3D" target="_blank">
+                <i></i><b>APP</b>下载
+                    <div class="app_wechat">
+                        <img src="http://www.lingquanbang.cn/0quan8-app.png" width="120" alt="">
+                        <span>扫码下载APP</span>
+                    </div>
+      </a>
+
+        
+  </div>
+</div><!--导航结束-->
+
+<div id="dtk_mian"><!--至底部总标签-->
+    <link rel="stylesheet" href="http://cmsstatic.dataoke.com//css/iconfont.css">
+<link rel="stylesheet" href="http://cmsstatic.dataoke.com//css/index.css">
+<!--背景属性-->
+<style>
+            #dtk_mian {
+            background: url("https://img.alicdn.com/imgextra/i4/2508158775/TB2C6CrqFXXXXbfXpXXXXXXXXXX_!!2508158775.png") top center repeat-y;
+        }
+    </style><!--背景属性设置-->
+  <!--红包-->
+  <!--<div class="hongbao_hd hide">
+
+    <div class="hd-code">
+
+      <div class="hd_close"></div>
+
+      <a target="_blank" href=" https://s.click.taobao.com/t?e=m%3D2%26s%3DBDWBikMM9bMcQipKwQzePCperVdZeJviK7Vc7tFgwiFRAdhuF14FMfiKnh6T1LIkzG7qzhnrbIjiCpeCUkeJc3yKwiqD2WK0Bmf7LSR66ahuUVyW9zW4ZH48ZegCJ4jazQQT6EW6N86yZgxYNQFCmDXMA26hg3lNOydbnLBpfnhwgAiVM%2BDr9QgySKYw23%2FDuc3QPpwryxbrlrkixe7slp4fNq5WWKCidjL8aoYw5AVXQtqHW%2F60boYzX8RD9IfYDmy%2FEuxTn30f3l5XiL4OVs%2ByKUR3z4L17prjHNoJ1JQ735YeP4ao%2FCjVGIzEFk1oIYULNg46oBA%3D&pid=mm_97124746_36944190_133066243&cpsrc=qhkj_dtkp">
+        <div class="code">
+            <span class="hd_waiting">去拆红包</span>        </div>
+
+      </a>
+
+    </div>
+
+  </div> 红包结束-->
+<!--红包属性结束
+<style>
+  .hongbao_hd {
+    position: fixed;
+    z-index: 9999999;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top:0;
+  }
+  .hd-code a {
+    width: 100%;
+    height:100%;
+    display: block;
+  }
+  .hongbao_hd .hd-code {
+    width: 280px;
+    height:368px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -214px;
+    margin-left: -140px;
+    background: url('http://cmsstatic.dataoke.com/web/images/hd/ssy_hd.png') no-repeat;
+    background-size: 100%;
+  }
+  .code .hd_waiting {
+    left: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 37px;
+    color: #914800;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .hd_close {
+    cursor: pointer;
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+    margin-right: -15px;
+    width: 30px;
+    height: 30px;
+    background: url('http://cmsstatic.dataoke.com/web/images/hd/ssy_hd_close.png') no-repeat;
+    background-size: cover;
+  }
+  .hd-code .code {
+    font-size: 12px;
+    background: none;
+    font-family: "Microsoft Yahei";
+    text-align: center;
+  }
+</style> 红包属性-->
+<!--属性-->
+<script>
+  //设置cookie
+  function setCookie(c_name, value) {
+    var exdate = new Date();
+    exdate.setTime(exdate.getTime() + 1 * 60 * 60 * 1000);
+    //exdate.setTime(exdate.getTime() + 10 * 1000);
+    document.cookie = c_name + "=" + escape(value) + (";path=/;expires=" + exdate.toGMTString());
+  }
+  // 获取cookie
+  function getCookie(c_name) {
+    if (document.cookie.length > 0) {
+      c_start = document.cookie.indexOf(c_name + "=")
+      if (c_start != -1) {
+        c_start = c_start + c_name.length + 1;
+        c_end = document.cookie.indexOf(";", c_start);
+        if (c_end == -1) c_end = document.cookie.length;
+        return unescape(document.cookie.substring(c_start, c_end));
+      }
+    }
+    return "";
+  };
+  if(getCookie('hd_hongbao') == 1){
+  }else{
+    $('.hongbao_hd').removeClass('hide');
+    setCookie('hd_hongbao',1)
+  }
+
+
+  $('.hd_close,.hd-code a').on('click',function(){
+    $('.hongbao_hd').remove();
+  })//获取固件版本
+
+
+</script><!--banner-->
+<!--导航下-轮播-左右-->
+<div id="banner">
+    <div class="---banner_bg----">
+    <div class="banner_con clearfix">
+        <!--列表   -->
+        <div class="list fl theme-bg-color-7">
+            <ul>
+                <!-- 
+                <li class="theme-hover-bg-color-6"><i class="theme-color-3 iconfont">&#xe609;</i>
+                    <a data-catid="4" href="/index.php?r=l&cid=4&u=669231">居家、日用<em style=" margin-left: 4px; margin-top: 10px;width:9px; height:14px; position: absolute;background:url(http://cmsstatic.dataoke.com//images/x_hot.gif);/* background-color: red; */"> </em></a>
+                </li> -->
+
+                                    <li class=" theme-hover-bg-color-6" style="height:42px; line-height: 42px;">
+                        <i class="theme-color-3 iconfont">&#xe617;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=1"> 女装</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="height:42px; line-height: 42px;">
+                        <i class="theme-color-3 iconfont">&#xe621;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=3"> 美妆</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe625;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=6"> 美食</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe61d;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=9"> 男装</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe623;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=4"> 居家日用</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe61e;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=5"> 鞋品</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe61f;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=11"> 箱包</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe622;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=14"> 家装家纺</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe627;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=8"> 数码家电</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe624;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=2"> 母婴</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe628;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=12"> 配饰</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe626;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=10"> 内衣</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe62a;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=7"> 文娱车品</a>
+                    </li>
+
+                                    <li class=" theme-hover-bg-color-6" style="">
+                        <i class="theme-color-3 iconfont">&#xe629;</i><a href="http://www.lingquanbang.cn/index.php?r=l&cid=13"> 户外运动</a>
+                    </li>
+
+                            </ul>
+        </div>
+
+        <!-- 轮播-->
+        <div class="unslider swiper-container fl">
+            <div class="swiper-wrapper" >
+                                <!--<div class="swiper-slide"><!-- 618狂欢预售
+                        <a href="http://www.lingquanbang.cn/index.php?r=l&u=669231" data-gid="4307668" data-ci="196749" data-in="1" data-uid="669231" data-cn="21" target="_blank">
+                            <img style="border: 0" src="https://img.alicdn.com/imgextra/i2/724270614/TB2knjyuQOWBuNjSsppXXXPgpXa_!!724270614.gif" width="720" height="300">
+                        </a>
+                    </div> -->
+                               <div class="swiper-slide"><!--TOP60-->
+                        <a href="http://www.lingquanbang.cn/index.php?r=p&u=669231" data-gid="4299995" data-ci="196267" data-in="1" data-uid="669231" data-cn="21" target="_blank">
+                            <img style="border: 0" src="https://img.alicdn.com/imgextra/i3/724270614/TB2KXKYaYZnBKNjSZFGXXbt3FXa_!!724270614.png" width="720" height="300">
+                        </a>
+                    </div>
+                                <div class="swiper-slide"><!--护肤品-->
+                        <a href="http://www.lingquanbang.cn/index.php?r=l&cid=3&u=669231" data-gid="4279864" data-ci="195589" data-in="1" data-uid="669231" data-cn="21" target="_blank">
+                            <img style="border: 0" src="https://img.alicdn.com/imgextra/i1/724270614/TB2SrSWa9cqBKNjSZFgXXX_kXXa_!!724270614.jpg" width="720" height="300">
+                        </a>
+                    </div>
+                                <div class="swiper-slide"><!--母婴-->
+                        <a href="http://www.lingquanbang.cn/index.php?r=l&cid=2&u=669231" data-gid="4299995" data-ci="196267" data-in="1" data-uid="669231" data-cn="21" target="_blank">
+                            <img style="border: 0" src="https://img.alicdn.com/imgextra/i1/724270614/TB2i8YceoR1BeNjy0FmXXb0wVXa_!!724270614.jpg" width="720" height="300">
+                        </a>
+                    </div>
+                                <div class="swiper-slide"><!--皮带-->
+                        <a href="http://www.lingquanbang.cn/index.php?r=l&kw=%E7%9A%AE%E5%B8%A6" data-gid="4276363" data-ci="195388" data-in="1" data-uid="669231" data-cn="21" target="_blank">
+                            <img style="border: 0" src="https://img.alicdn.com/imgextra/i1/724270614/TB2O8DfasrI8KJjy0FhXXbfnpXa_!!724270614.jpg" width="720" height="300">
+                        </a>
+                    </div>
+                               <!--咚咚抢--<div class="swiper-slide">
+                        <a href="http://www.lingquanbang.cn/index.php?r=ddq&u=669231" data-gid="4252386" data-ci="194073" data-in="1" data-uid="669231" data-cn="21" target="_blank">
+                            <img style="border: 0" src="https://img.alicdn.com/imgextra/i1/724270614/TB2XdDgaBTH8KJjy0FiXXcRsXXa_!!724270614.png" width="720" height="300">
+                        </a>
+                    </div><!--咚咚抢-->
+                        </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"><img class="arrow" id="ar" src="http://cmsstatic.dataoke.com//images/arrowr.png" alt="next" width="25" height="50"></div>
+            <div class="swiper-button-prev"><img class="arrow" id="al" src="http://cmsstatic.dataoke.com//images/arrowl.png" alt="prev" width="25" height="50"></div>
+
+        </div>
+
+                <!--右边大图 -->
+        <div class="rightPic fr" style="position: relative">
+            <div class="bdshare" style="position: absolute;top: 95px;left: 36px;">
+                <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_more" data-cmd="more"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                </div>
+                <script>
+                    try{
+                        window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "最近发现了一个领独享优惠券的网站，都是限时限量抢购，一般人享受不到的！性价比超高哦，分享给大家，保证你会惊喜滴！",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "24"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                    }catch(error){
+
+                    }
+
+                </script>
+            </div>
+			 <a href="http://www.lingquanbang.cn/index.php?r=l&cid=0&s=t&eve=1" target="_blank" style="    position: absolute;
+    display: block;
+    width: 100%;
+    height: 143px;
+    top: 156px;"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2053469401/TB2JKXVfiQnBKNjSZFmXXcApVXa_!!2053469401.jpg" alt="" width="250" height="300">
+        </div>
+    </div>
+    </div>
+</div>
+
+<!--导航下-轮播-左右-->
+<!--搜索框属性-->
+<style>
+    #search2 button2{
+        height: 37px;
+        overflow: hidden;
+        padding: 7px 30px;
+    }
+    .floatNav2{
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        position: fixed;
+        top:0;
+        z-index: 9999;
+        display: none;
+    }
+    .fn-block2{
+        width: 590px;
+        height:45px;
+        border: 2px solid #E8314B;
+        margin: 6px auto;
+        position: relative;
+		margin-top: 20px;
+	    margin-bottom: 40px;
+    }
+    .fn-src2{
+        width: 425px;
+        height: 45px;
+        border: none;
+        font-size: 16px;
+        font-family: 'microsoft yahei';
+        color: #aaa;
+        padding-left: 15px;
+    }
+    .srcBtn2{
+        width: 150px;
+        height: 49px;
+        background-color: #E8314B;
+        border: none;
+        position: absolute;
+        right: -2px;
+        top:-2px;
+        color: #fff;
+        background-image: url("http://www.zanhuasuan.cn/0quan8/sou1.png");
+        background-size:auto 62% ;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+</style>	<!--搜索框属性-->
+		
+<!--content-->
+<div id="content" style="padding-bottom: 58px;" data-ggwurl="?r=index/recomd&t=40">
+            <div class="theme-border-color-5 divider" style="text-align: left;padding: 0 10px;width: 1178px;border: 1px solid #ffd6d6; color: #9c9c9c;background-color: #FDFCE7;">
+              <div align="center">★★★★★【<span class="STYLE4">每天更新千款，纯人工筛选验货，限时限量特卖】★★★★★			  </div>
+            </div>
+            <!--领券优惠-->
+    <div class="discount">
+        <!-- 领券优惠头部-->
+        <div class="discount_head clearfix" style="margin-bottom: 10px;">
+            <div class="dishead_left fl" style="color: #fbacc2">
+                <h1 style="color: #585858;font-weight: normal;">领券秒杀精选</h1>
+                <span class="color_p pd  theme-color-4">/</span>
+                <span class="color_p  theme-color-4">实时更新</span>
+                <span class="color_p  theme-color-4">/</span>
+                <span class="color_p  theme-color-4">独享优惠券</span>
+            </div>
+            <div class="dishead_right fr" style="color: #fbacc2">
+                <span class="color_p  theme-color-4">/</span>
+                <span class="color_p theme-color-4">将优选、性价比做到极致</span>
+                <span class="color_p  theme-color-4">/</span>
+            </div>
+        </div>
+
+		        
+	    <!--搜索框开始-->
+        <div id="search2 button2">
+            <div class="fn-block2">
+                <form action="http://www.lingquanbang.cn/index.php?r=index/index" target="_blank">
+                <input type="hidden" name="r" value="l">
+                <input type="text" class="fn-src2" value="" name="kw" placeholder="输入商品名即可搜优惠券 比如：运动鞋"/>
+                <button type="submit" class="srcBtn2 STYLE1 STYLE3 STYLE1">搜 索</button>
+                </form>
+            </div>
+        </div>
+		<!--搜索框结束 -->
+
+       
+		<!--领券优惠商品-->
+        <div class="dis_product">
+            <!-- 商品-->
+        
+                    <div class="theme-hover-border-color-1 pro_detail addLeft">
+                        <a href="http://www.lingquanbang.cn/index.php?r=l&cid=0&s=t&tmall=1" target="_blank" >
+                            <img src="https://img.alicdn.com/imgextra/i4/724270614/TB2FgfXagCYW1JjSZFCXXcxLVXa_!!724270614.jpg" height="272" style="border: 0;max-width:582px;"/>
+                        </a>
+                        <div class="pro_intro fr">
+                            <div class="pro_price color_p">
+                              <!-- --<div class="out-time theme-color-4" data-goodsid="" data-seller="289254746"></div><!-- -->
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="theme-hover-border-color-1 pro_detail fr">
+                        <a href="http://www.lingquanbang.cn/index.php?r=l&u=669231" target="_blank" >
+                            <img src="https://img.alicdn.com/imgextra/i4/724270614/TB2hrKsouySBuNjy1zdXXXPxFXa_!!724270614.jpg" height="272" style="border: 0;max-width:582px;"/>
+                        </a>
+                        <div class="">
+                            <div class="">
+                              <div class="out-time" data-goodsid="" data-seller=""></div>
+                            </div>
+
+                        </div>
+                    </div>
+					
+					
+					<!--京东优惠券 --
+                    <div class="theme-hover-border-color-1 pro_detail addLeft">
+                        <a href="http://www.lingquanb.com/" target="_blank" >
+                            <img src="https://img.alicdn.com/imgextra/i2/724270614/TB2ApG7sTJYBeNjy1zeXXahzVXa_!!724270614.jpg" height="272" style="border: 0;max-width:582px;"/>
+                        </a>
+                        <div class="pro_intro fr">
+                            <div class="pro_price color_p">
+                              <div class="out-time theme-color-4" data-goodsid="" data-seller="289254746"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!--拼多多优惠券 --
+					<div class="theme-hover-border-color-1 pro_detail fr">
+                        <a href="http://quan.lingquanbang.cn/?mod=pdd_goods&act=index" target="_blank" >
+                            <img src="http://quan.zanhuasuan.cn/lingquanba/pdd.jpg" height="272" style="border: 0;max-width:582px;"/>
+                        </a>
+                        <div class="">
+                            <div class="">
+                              <div class="out-time" data-goodsid="" data-seller=""></div>
+                            </div>
+
+                        </div>
+                    </div><!-- -->
+					
+					
+					
+		</div>
+		</div>
+</div>
+
+
+
+</div><!--粘贴的商品+搜索框-->
+<!--++++-->
+<script src="http://cmsstatic.dataoke.com//web/js/cms_ggw.js"></script>
+
+<script src="http://cmsstatic.dataoke.com/other/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<!--含商品属性-->
+<script>
+    $(document).ready(function (e) {
+
+        $('.dis_product .pro_detail a').on('click', function(){
+            xctj("tid=xc-dtk-cms-"+$(this).data('uid'), "at=crs","ds=web","in="+$(this).data('in'),"ec=click","gid="+$(this).data('gid'),"ci="+$(this).data('ci'),"cn="+$(this).data('cn'));
+        });
+
+        $('.swiper-container .swiper-wrapper .swiper-slide a').on('click', function(){
+            xctj("tid=xc-dtk-cms-"+$(this).data('uid'), "at=crs","ds=web","in="+$(this).data('in'),"ec=click","gid="+$(this).data('gid'),"ci="+$(this).data('ci'),"cn="+$(this).data('cn'));
+        });
+
+        //设置cookie
+        function setCookie(c_name, value,t) {
+            var exdate = new Date();
+            exdate.setTime(exdate.getTime() + t);
+            document.cookie = c_name + "=" + escape(value) + (";expires=" + exdate.toGMTString());
+        }
+        // 获取cookie
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=")
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        };
+
+        var dpDom = $('.dis_product .pro_detail');
+        for(var i = 0 ; i < dpDom.length ; i++){
+            (function(i){
+                var dpGoodsid = $('.out-time').eq(i).data('goodsid').toString(),
+                    str = "";<!--店铺名称: --><!--下一行修改过-->
+                if(getCookie(dpGoodsid)){
+                    $.ajax({
+                        url:"http://hws.m.taobao.com/cache/wdetail/5.0/",
+                        dataType:'jsonp',
+                        data:{id:dpGoodsid},
+                        jsonp:'callback',
+                        success:function(res) {
+                            $('.out-time').eq(i).html(str+res.data.seller.shopTitle);
+                            setCookie(dpGoodsid,res.data.seller.shopTitle,600000);
+                            $('.out-time').eq(i).removeClass('hide');
+                        }
+                    });
+                }else{
+                    $('.out-time').eq(i).html(str+getCookie(dpGoodsid));
+                    $('.out-time').eq(i).removeClass('hide');
+                }
+            })(i)
+
+        }
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            autoplay: 3000,
+            loop: true
+        });
+
+        var overSwiper = function(s){
+            if(swiper){
+                $('.unslider').mouseleave(function(){
+                    swiper.startAutoplay();
+                });
+                $('.swiper-pagination .swiper-pagination-bullet').mouseenter(function(){
+                    $(this).click();
+                    swiper.startAutoplay();
+                });
+            }else{
+                if(s < 10){
+                    s++ ;
+                    setTimeout(function(){overSwiper(s);},500);
+                }
+            }
+        }
+
+        if(swiper){
+            $('.unslider').mouseleave(function(){
+                swiper.startAutoplay();
+            });
+            $('.swiper-pagination .swiper-pagination-bullet').mouseenter(function(){
+                $(this).click();
+                swiper.startAutoplay();
+            });
+        }else{
+            overSwiper(s);
+        }
+
+    });
+</script><!--含商品属性结束-->
+</div>
+<!--底部-->
+<div id="footer" class="theme-border-top-color-1" style="background-color: #373737;height: 190px;width: 100%;border-top: 3px solid #ff3366;">
+      <div class="footer-wrapper " style="width: 1200px;margin: 0 auto;position: relative;text-align: center">
+        <span class="footer-wrapper " style="left: -220px; margin: 0 auto; position: relative; text-align: left; top: 10px;"><a href="https://jq.qq.com/?_wv=1027&k=5XQ9jYJ" target="_blank"><img src="http://www.zanhuasuan.cn/0quan8/xcx.jpg" width="100" height="100" border="0" ></a></span>
+		<span class="footer-wrapper " style="left: -200px; margin: 0 auto; position: relative; text-align: left; ; top: 10px;"><img src="http://www.zanhuasuan.cn/0quan8/wxkf.png" width="100" height="100" ></span><img src="http://cmsstatic.dataoke.com//images/bottom_text.png" alt="" style="border: 0;top: 1px;margin-left: -120px;">
+        <div class="author" style="    position: absolute;
+    top: 67px;
+    left: 990px;
+    color: #FFFFFF;
+    font-size: 18px;">by &nbsp;&nbsp;领券帮</div>
+	<div class="author" style="    position: absolute;
+    top: 110px;
+    left: 10px;
+    color: #FFFFFF;
+    font-size: 18px;">微信小程序</div>
+	<div class="author" style="    position: absolute;
+    top: 110px;
+    left: 135px;
+    color: #FFFFFF;
+    font-size: 18px;">客服微信号</div>
+      <div class="text" style="color: #a2a2a2; font-size: 16px; margin-top: 33px;">
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274149292'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/stat.php%3Fid%3D1274149292%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+            &copy; CopyRight&nbsp;2018            &nbsp;
+          <a href="http://www.lingquanbang.cn" target="_blank" rel="nofollow" style="color:#a2a2a2;">
+              珠海升腾农业科技开发有限公司            </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                <a target="_blank" class="footer_service" href="http://wpa.qq.com/msgrd?v=3&uin=312943905&site=qq&menu=yes" style="color: #8da7cb" title="联系我帮你解答">^_^亲遇到问题，联系我帮你处理哈</a>                  </div>
+    </div>
+  </div><!--底部diy-->
+
+<!--底部结束-->
+<div class="toTop" style="display: none" onClick=" $('body,html').animate({scrollTop:0},1000);">
+    &#xe60c;</div>
+<!--属性-->
+<script type="text/javascript">
+
+    
+    //xc statistics
+        ;!(function(window, document) {
+            "use strict"
+            try {
+                var space = "xctj";
+
+                // 创建队列
+                window["xckj"] = space;
+                window[space] = window[space] || function () {
+                        (window[space].list = window[space].list || new Array()).push(arguments)
+                    };
+                window[space].time = window[space].time || 1 * new Date();
+
+                // 创建元素
+                var script = document.createElement("script");
+
+                // 设置元素
+                script.type = "text/javascript";
+                script.src = "https://tj.ffquan.com/satc.js?z=20170801" ; /* 配置satc.js路径 */
+                script.async = 1;
+
+                // 添加元素
+                var node = document.getElementsByTagName("script")[0];
+                node.parentNode.insertBefore(script, node)
+            } catch (error) { }
+        })(window, document);
+
+        //xc statistics 必填项
+        xctj("tid=xc-dtk-cms-669231", "at=pageview","ds=web","in=1");
+
+        var coutData =[{"page":"0","event_name":"index_search","page_event":"click","page_class":"#search button","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"app_download_hover","page_event":"mouseenter","page_class":".app_download","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"record_number","page_event":"click","page_class":".miitbeian","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"service_bottom","page_event":"click","page_class":".footer_service","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"service_top","page_event":"click","page_class":".header_service","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"logo","page_event":"click","page_class":"#header .header_logo","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"home_set","page_event":"click","page_class":".set_home","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"collect_set","page_event":"click","page_class":".add_favorite","is_data":"","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"index_banner ","page_event":"click","page_class":".swiper-slide a","is_data":"gid","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"index_left_cid","page_event":"click","page_class":"#banner .list li a","is_data":"catid","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"index_qlist_goods","page_event":"click","page_class":".live .goods-list li a","is_data":"gid","is_posting_events":"0","is_num":"0","is_param":""},{"page":"0","event_name":"index_search_fixed","page_event":"click","page_class":".floatNav .srcBtn","is_data":"","is_posting_events":"0","is_num":"0","is_param":""}],
+            pageR =window.location.href.split('r=').length>1?"r="+window.location.href.split('r=')[1].split('&')[0]:'noR';
+            for(var i = 0 ; i < coutData.length ; i++){
+                if(coutData[i].page == pageR || coutData[i].page=="0"){//事件触发页面
+                    (function(s){
+                        var paramBoole =true;
+                        for(var a = 0 ;a < coutData[s].is_param.split(',').length ; a ++){
+                            var paramKey = coutData[s].is_param.split(',')[a]+"=";
+                            if(coutData[s].is_param.split(',')[a] != ''){
+                                if( window.location.href.split(paramKey).length<2){
+                                    paramBoole = false;
+                                    return false;
+                                }
+                            }
+                        }
+
+                        if(paramBoole ==false){//如果有参数，是否满足参数条件
+                            return false
+                        }
+
+                        var isData = coutData[s].is_data !=""?(($(coutData[s].page_class).data(coutData[s].is_data)!='' && $(coutData[s].page_class).data(coutData[s].is_data)!=undefined)?',"'+coutData[s].is_data+'='+$(coutData[s].page_class).data(coutData[s].is_data)+'"':''):'',//是否获取元素自定义数据
+                            xcStr = '"tid=xc-dtk-cms-669231","ds=web","ec='+coutData[s].page_event+'","in=1"'+isData;
+
+                        if(coutData[s].is_posting_events == 0){//是否事件代理
+                            $(coutData[s].page_class).on(coutData[s].page_event,function(){
+                                var eventName = coutData[s].is_num==1?',"ea='+coutData[s].event_name+'_'+($(this).index()+1)+'"':',"ea='+coutData[s].event_name+'"';//是否添加序号
+                                eval('xctj('+xcStr+eventName+')');
+                            });
+                        }else{
+                            $('body').on(coutData[s].page_event,coutData[s].page_class,function(){
+                                var eventName = coutData[s].is_num==1?',"ea='+coutData[s].event_name+'_'+($(this).index()+1)+'"':',"ea='+coutData[s].event_name+'"';//是否添加序号
+                                eval('xctj('+xcStr+eventName+')');
+                            })
+                        }
+                    })(i)
+                }
+            }
+
+    
+
+    // 设置为主页
+    function SetHome(obj, vrl) {
+        try {
+            obj.style.behavior = 'url(#default#homepage)';
+            obj.setHomePage(vrl);
+        }
+        catch (e) {
+            if (window.netscape) {
+                try {
+                    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                }
+                catch (e) {
+                    alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                }
+                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                prefs.setCharPref('browser.startup.homepage', vrl);
+            } else {
+                alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置首页。3.输入：" + vrl + "点击确定。");
+            }
+        }
+    }
+    // 加入收藏 兼容360和IE6
+    function shoucang(sTitle, sURL) {
+        try {
+            window.external.addFavorite(sURL, sTitle);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(sTitle, sURL, "");
+            }
+            catch (e) {
+                alert("加入收藏失败，请使用Ctrl+D进行添加");
+            }
+        }
+    }
+
+    var ok = '';
+    $(function () {
+        $('#search button').click(function () {
+            if($('#search input[name="kw"]').val().length > 16){
+                layer.msg("您搜索的关键词过长！",{
+                    timer: 2500
+                });
+                return false;
+            }
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 500) {
+                $(".toTop").fadeIn(1000);
+            }
+            else {
+                $(".toTop").fadeOut(1000);
+            }
+        });
+    });
+
+
+    window.onscroll=function(){
+        var _scroll = document.body.scrollTop;
+        if(_scroll>130){
+            $(".floatNav").fadeIn();
+        }else{
+            $(".floatNav").fadeOut();
+        }
+
+    }
+
+</script>
+        <script type="text/javascript">
+    (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+            s.charset = "gbk";
+            s.async = true;
+            s.src = "https://alimama.alicdn.com/tkapi.js";
+            h.insertBefore(s, h.firstChild);
+        };
+        var o = {
+            pid: "mm_97124746_36944190_133106540",/*推广单元ID，用于区分不同的推广渠道*/
+            appkey: "",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
+            unid: "",/*自定义统计字段*/
+            type: "click" /* click 组件的入口标志 （使用click组件必设）*/
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+    })(window,document);
+</script><!--阿里妈妈配置结束--><script type="text/javascript" src="http://cmsstatic.dataoke.com//js/scrollTop2.js"></script>
+<script type="text/javascript" async src="//idm-su.baidu.com/su.js"></script>
+<script src="http://quan.zanhuasuan.cn/lingquanba/cjss2.js"></script>
+</body>
+</html>
